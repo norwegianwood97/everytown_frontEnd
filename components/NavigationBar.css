@@ -1,0 +1,85 @@
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background: rgb(65, 65, 65); /* 회색 배경색 */
+  color: #fff; /* 흰색 글자색 */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 상단 바 그림자 */
+}
+
+.MainPage {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none; /* 기본 링크 스타일 제거 */
+  color: #fff; /* 브랜드 색상 */
+}
+
+.navigation-links {
+  margin-left: 1em;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+}
+
+.navigation-link-location {
+  padding: 10px 15px;
+  background-color: rgb(65, 65, 65);
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navigation-link-logout {
+  padding: 10px 15px;
+  background-color:rgb(65, 65, 65);
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navigation-link-login {
+  padding: 10px 15px;
+  background-color: rgb(65, 65, 65);
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* NavigationBar.css */
+
+/* 기존 스타일 유지하면서 추가적인 스타일 적용 */
+.navigation-link-location, .navigation-link-login, .navigation-link-logout {
+  text-decoration: none; /* 밑줄 제거 */
+  position: relative; /* 하단 밑줄을 위한 위치 설정 */
+}
+
+/* 마우스 오버시 밑줄 표시 */
+.navigation-link-location:hover::after, .navigation-link-login:hover::after, .navigation-link-logout:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  bottom: -5px;
+  left: 0;
+}
+
+/* profileElement 크기 및 위치 조정 */
+.profileElement {
+  width: 50px; /* 크기 조정 */
+  height: 50px; /* 크기 조정 */
+  border-radius: 50%; /* 원형 모양 */
+  object-fit: cover; /* 이미지 비율 유지 */
+  vertical-align: middle; /* 상하 중앙 정렬 */
+}
+

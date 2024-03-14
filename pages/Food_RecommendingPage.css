@@ -1,0 +1,9 @@
+.back-to-previous-page {
+    background-color: rgb(63, 175, 63); /* Green background */
+    color: white; /* Black text */
+    padding: 5px; /* Padding inside the tag */
+    margin-right: 5px; /* Space between tags */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Aligns tags inline */
+    white-space: nowrap; /* Prevents the tag from breaking into multiple lines */
+  }

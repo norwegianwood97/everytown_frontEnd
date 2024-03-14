@@ -1,0 +1,81 @@
+/* ChatRoom_CreateModal.css */
+
+.chat-create-modal {
+  width: 350px;
+  height: 450px;
+  overflow: hidden; /* Hide content that overflows the box */
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.room-title-textarea,
+.room-tag-textarea {
+  width: calc(100% - 20px);
+  height: 5em;
+  margin: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none; /* Disable resizing */
+  resize: vertical;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.room-title-textarea:focus,
+.room-tag-textarea:focus {
+  border-color: #000000;
+}
+
+.chat-create-modal .create-button {
+  width: calc(100% - 20px);
+  margin: 10px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.chat-create-modal .create-button:hover {
+  background-color: #45a049;
+}
+
+.chat-create-modal .modal-close-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  background-color: #e74c3c !important; /* Use !important to ensure it takes precedence */
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.chat-create-modal .modal-close-button:hover {
+  background-color: #a71808 !important;
+}
+
+.chat-create {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.room-title-explain,
+.room-tag-explain {
+  padding-left: 15px;
+}

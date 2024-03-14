@@ -1,0 +1,175 @@
+/* CommunityPage.css */
+.community-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.community-page-bar {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+  border-bottom: 2px solid black;
+}
+
+.community-title {
+  flex-grow: 1;
+}
+
+.right-icons {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.new-post-form button {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.new-post-form button:hover {
+  background-color: #2980b9;
+}
+
+
+
+/* 정렬 선택 바 컨테이너 */
+.community-category-bar {
+  display: flex; /* Flexbox 레이아웃 사용 */
+  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: flex-end; /* 우측 정렬 */
+  margin-bottom: 20px; /* 하단 여백 */
+  
+}
+
+/* 정렬 선택 바 라벨 */
+.community-category-bar label {
+  margin-right: 10px; /* 라벨과 셀렉트 박스 사이 간격 */
+}
+
+/* 정렬 선택 바 셀렉트 */
+.community-category-bar select {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.community-list1{
+  border-top: 1px solid black;
+}
+.community-list2{
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-right: 2px solid #ddd;
+  overflow-y: auto;
+}
+.community-item {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  align-items: center; /* 세로 중앙 정렬 */
+  max-height: 100px; /* 최대 높이 설정 */
+  overflow: hidden; /* 내용이 넘칠 경우 숨김 */
+ 
+}
+
+.left-section {
+  border-top: 2px solid black;
+}
+
+
+
+.community-tags {
+  display: flex;
+  align-items: center;
+}
+
+.community-tags img {
+  border-radius: 50%;
+  width: 50px; /* 이미지의 크기를 조절할 수 있습니다. */
+  height: 50px;
+  margin-right: 10px; /* 이미지와 텍스트 사이의 간격을 조절할 수 있습니다. */
+}
+.community-tags p{
+  white-space: nowrap; /* 텍스트를 줄 바꿈하지 않도록 설정 */
+}
+
+.round-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* 50%로 지정하여 이미지를 원형으로 만듦 */
+}
+
+
+/* 이름 스타일 조정 */
+.comp1 {
+  flex: 3; /* name이 다른 요소들보다 더 큰 비중을 차지하도록 조정 */
+  padding-left: 50px;
+  text-align: left;
+  overflow: hidden; /* 내용이 넘칠 경우 숨김 */
+  white-space: nowrap; /* 텍스트를 한 줄로 표시 */
+  text-overflow: ellipsis; /* 내용이 넘칠 때 ... 으로 표시 */
+}
+
+.comp1 h3 {
+  margin: 0; /* 기본 마진 제거 */
+  font-size: 20px; /* 원하는 크기로 조정 */
+}
+
+.comp2, .comp3, .comp4, .comp5, .comp6, .comp7 {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px; /* 요소들 사이의 간격을 조정 */
+  overflow: hidden; /* 내용이 넘칠 경우 숨김 */
+  white-space: nowrap; /* 텍스트를 한 줄로 표시 */
+  text-overflow: ellipsis; /* 내용이 넘칠 때 ... 으로 표시 */
+}
+
+.community-modify-and-delete{
+  display: flex; /* Flex 컨테이너 설정 */
+  align-items: center; /* 버튼들을 세로 방향 중앙에 정렬 */
+  justify-content: flex-start; /* 버튼들을 가로 방향 시작 부분에 정렬 */
+}
+
+.community-modify button{
+  background-color: rgb(61, 170, 61);
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.community-modify button:hover{
+  background-color: green;
+}
+
+.community-delete button{
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.community-delete button:hover{
+  background-color: #c0392b;
+}
+
+.community-item button {
+  white-space: nowrap;
+}

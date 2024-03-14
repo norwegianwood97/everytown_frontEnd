@@ -1,0 +1,217 @@
+/* Place_DetailPage.css */
+
+/* 플레이스 정보 섹션 */
+
+.place-info {
+  display: flex;
+  align-items: center; /* 중앙 정렬 */
+  justify-content: space-between; /* 양쪽 끝으로 정렬 */
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+/* 플레이스 상세 정보 및 지도 섹션 */
+.place-details-and-map {
+  display: flex; /* 플렉스 박스 사용 */
+  justify-content: space-between; /* 내부 요소들을 양 끝으로 정렬 */
+  border-bottom: 1px solid #000;
+  padding-top: 10px;
+}
+
+.place-details, .place-map {
+  flex: 1; /* 두 섹션 모두 동일한 공간을 차지하도록 설정 */
+  padding: 0 10px; /* 좌우 여백 추가 */
+}
+
+.place-map.full-width {
+  width: 100%;
+  flex: none; /* 전체 너비를 사용할 경우 flex 속성 무시 */
+}
+
+/* 리뷰 섹션 */
+
+
+.place-review-write-and-image {
+  display: flex; /* 플렉스 박스 사용 */
+  justify-content: space-between; /* 내부 요소들을 양 끝으로 정렬 */
+  padding-top: 10px;
+}
+
+.place-review-write, .place-image-with-review
+ {
+  flex: 1; /* 두 섹션 모두 동일한 공간을 차지하도록 설정 */
+  padding: 0 10px; /* 좌우 여백 추가 */
+}
+
+.place-image-with-review.full-width {
+  width: 100%;
+  flex: none; /* 전체 너비를 사용할 경우 flex 속성 무시 */
+}
+
+
+.review-bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-rating-and-tags {
+  flex-grow: 1; /* 평점과 태그 섹션에 더 많은 공간을 할당 */
+}
+
+.submit-review-button {
+  /* 기존 submit-review-button 스타일 */
+  margin-left: 10px; /* 버튼과 평점/태그 섹션 사이의 간격 */
+}
+
+
+
+
+/* 리뷰 tags */
+.review-tags {
+  display: flex; /* Flexbox 레이아웃 사용 */
+  align-items: center; /* 세로 중앙 정렬 */
+}
+
+
+/* 선택된 카테고리 및 태그 버튼 스타일 */
+.review-tags button.selected {
+  background-color: #4CAF50; /* 선택된 버튼의 배경색 */
+  color: white; /* 선택된 버튼의 글자색 */
+}
+
+/* 카테고리 및 태그 버튼 기본 스타일 */
+.review-tags button {
+  background-color: #f0f0f0; /* 기본 배경색 */
+  color: black; /* 기본 글자색 */
+  border: 1px solid #ccc; /* 테두리 색상 */
+  margin-right: 5px; /* 오른쪽 마진 */
+  padding: 5px 10px; /* 패딩 */
+  border-radius: 4px; /* 둥근 모서리 */
+  cursor: pointer; /* 커서 스타일 */
+  transition: background-color 0.3s; /* 배경색 변경 애니메이션 */
+}
+
+.review-tags button:hover {
+  background-color: #ddd; /* 마우스 오버시 배경색 */
+}
+
+.review-textarea {
+  width: 80%;
+  height: 270px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+  
+.submit-review-button{
+  background-color: #4CAF50; /* 선택된 버튼의 배경색 */
+  color: white; /* 선택된 버튼의 글자색 */
+  border: 1px solid #ccc; /* 테두리 색상 */
+  margin-right: 5px; /* 오른쪽 마진 */
+  padding: 5px 10px; /* 패딩 */
+  border-radius: 4px; /* 둥근 모서리 */
+  cursor: pointer; /* 커서 스타일 */
+  transition: background-color 0.3s; /* 배경색 변경 애니메이션 */
+}
+
+
+/* 리뷰 및 이미지 컨테이너 스타일 */
+.place-review {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.review-rating {
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif; /* 폰트 스타일 변경 */
+}
+
+.review-rating label {
+  font-weight: bold; /* 라벨 폰트 굵기 */
+  color: #333; /* 라벨 색상 */
+}
+
+.review-rating select {
+  padding: 8px 12px; /* 패딩 추가 */
+  border: 1px solid #ccc; /* 테두리 스타일 */
+  border-radius: 4px; /* 둥근 테두리 */
+  background-color: #f8f8f8; /* 배경색 */
+  cursor: pointer; /* 커서 변경 */
+  appearance: none; /* 기본 화살표 제거 */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+.review-rating select:hover {
+  border-color: #888; /* 호버 시 테두리 색상 변경 */
+}
+
+.review-tag {
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.review-content {
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+.review-time {
+  font-style: italic;
+  color: #777777;
+  display: flex;
+  align-items: center;
+}
+
+.review-author {
+  font-style: italic;
+  color: #777777;
+  display: flex;
+  align-items: center;
+}
+
+.reviewThumbnail {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Button styles */
+.review-save-button {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.review-save-button:hover {
+  background-color: #2980b9;
+}

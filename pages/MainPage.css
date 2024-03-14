@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.App-header {
+  background-color: #fff;
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainpage-location-bar {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+
+.MainPage-search-bar { /*검색창*/
+  width : 500px;
+}
+
+.icons-container { /* 하단 아이콘들*/
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.icon {
+  display: inline-flex; /* flexbox를 사용하여 정렬 */
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.icon img {
+  width: 40px; /* 필요에 따라 조절 */
+  height: auto;
+}
+
+.icon.with-name {
+  flex-direction: column; /* 텍스트가 아이콘 아래로 표시되도록 변경 */
+}
+
+.icon-name {
+  margin-top: 5px;
+}

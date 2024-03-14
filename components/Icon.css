@@ -1,0 +1,36 @@
+.icon {
+  display: inline-flex; /* flexbox를 사용하여 정렬 */
+  flex-direction: row; /* 기본적으로 가로 배치 */
+  align-items: center;
+  margin: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.icon img {
+  width: 40px; /* 필요에 따라 조절 */
+  height: auto;
+}
+
+/*텍스트가 아래로*/
+.icon.with-name {
+  flex-direction: column; /* 텍스트가 아이콘 아래로 표시되도록 변경 */
+}
+
+/*텍스트가 오른쪽으로*/
+.icon-with-text-right {
+  display: inline-flex;
+  flex-direction: row; /* 아이콘 옆에 텍스트를 배치 */
+  align-items: center;
+}
+
+.icon-with-text-right .icon-name {
+  margin-left: 5px; /* 아이콘과 텍스트 사이 간격 */
+}
+
+.icon-name {
+  margin-top: 5px; /* 이름과 아이콘 사이의 간격 */
+}
